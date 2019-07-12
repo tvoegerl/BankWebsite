@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="dashboard.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand">BankStudio</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav"></ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="home.html">Log Out</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div id="statement">My Balance</div>
+
+          <div id="balance">$800.50</div>
+          <form class="form-inline">
+            <div class="form-group" id="balance">
+              <label class="sr-only" for="exampleInputAmount"
+                >Amount (in dollars)</label
+              >
+              <div class="input-group">
+                <div class="input-group-addon">$</div>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputAmount"
+                  placeholder="Amount"
+                />
+                <div class="input-group-addon">.00</div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Transfer cash</button>
+          </form>
+        </div>
+        <div class="col-lg-6 border-left">
+          <div id="statement">Your Card</div>
+          <div>
+            <img
+              id="image"
+              src="https://www.nicoletbank.com/sites/default/files/2018-11/P_card-36-blue.png"
+              height="250px"
+              width="400px"
+            />
+          </div>
+        </div>
+      </div>
+      <table>
+        <tr>
+          <th colspan="6" id="title">
+            Transactions
+          </th>
+        </tr>
+        <tr>
+          <th>Description</th>
+          <th>Date</th>
+          <th>Type</th>
+          <th>In($)</th>
+          <th>Out($)</th>
+          <th>Balance</th>
+        </tr>
+        <tr>
+          <td>Apple</td>
+          <td>5th Oct 16</td>
+          <td>Direct Debit</td>
+          <td>+$1,000.00</td>
+          <td></td>
+          <td>$1,000.00</td>
+        </tr>
+        <tr>
+          <td>Apple</td>
+          <td>5th Oct 16</td>
+          <td>Direct Debit</td>
+          <td></td>
+          <td>-$1,000.00</td>
+          <td>$0</td>
+        </tr>
+        <tr>
+          <td>Apple</td>
+          <td>5th Oct 16</td>
+          <td>Direct Debit</td>
+          <td>+$1,000.00</td>
+          <td></td>
+          <td>$1,000.00</td>
+        </tr>
+        <tr>
+          <td>Apple</td>
+          <td>5th Oct 16</td>
+          <td>Direct Debit</td>
+          <td></td>
+          <td>-$1,000.00</td>
+          <td>$0</td>
+        </tr>
+        <tr>
+          <td>Apple</td>
+          <td>5th Oct 16</td>
+          <td>Direct Debit</td>
+          <td>+$1,000.00</td>
+          <td></td>
+          <td>$1,000.00</td>
+        </tr>
+        <tr>
+          <td>Apple</td>
+          <td>5th Oct 16</td>
+          <td>Direct Debit</td>
+          <td></td>
+          <td>-$100.50</td>
+          <td>$800.50</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
